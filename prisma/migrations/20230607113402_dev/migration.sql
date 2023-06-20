@@ -1,0 +1,10 @@
+-- CreateTable
+CREATE TABLE "Booking" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "flightId" INTEGER NOT NULL,
+    "userId" INTEGER NOT NULL,
+    "children" INTEGER NOT NULL,
+    "adults" INTEGER NOT NULL,
+    "price" DECIMAL NOT NULL,
+    "booked" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
